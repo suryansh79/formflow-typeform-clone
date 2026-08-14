@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #faf9f6;
+    --foreground: #191919;
+    --typeform-black: #262626;
+    --typeform-emerald: #047857;
+    --typeform-blue: #1d4ed8;
+    --typeform-border: #e4e4e7;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Custom scrollbar for builder and tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1aa;
+}
+
+/* Ambient gradient background for respondent screens */
+.typeform-bg-ambient {
+  background: radial-gradient(circle at 50% 30%, rgba(255, 255, 255, 0.98), rgba(248, 247, 244, 0.95));
+}
+
+/* Typeform Choice Card styling */
+.typeform-choice-btn {
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03), 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.typeform-choice-btn:hover {
+  transform: translateX(4px);
+  border-color: #71717a;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.typeform-choice-btn:active {
+  transform: translateX(2px) scale(0.99);
+}
+
+.typeform-choice-btn.selected {
+  border-color: var(--typeform-black);
+  background-color: #18181b;
+  color: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Keyboard badge styling */
+.typeform-key-box {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  transition: all 0.15s ease;
+}
+
+/* Signature OK Button */
+.typeform-ok-btn {
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.typeform-ok-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.22);
+  opacity: 0.95;
+}
+
+.typeform-ok-btn:active {
+  transform: translateY(0);
+}
+
+/* Error animation */
+@keyframes typeform-shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+
+.animate-shake {
+  animation: typeform-shake 0.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
