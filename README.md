@@ -1,5 +1,8 @@
 # FormFlow ✦ High-Fidelity Typeform Clone
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-formflow--typeform--clone.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://formflow-typeform-clone.vercel.app/)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/suryansh79/formflow-typeform-clone)
+
 [![Next.js](https://img.shields.io/badge/Next.js-16_App_Router-black?logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.0-38BDF8?logo=tailwindcss)](https://tailwindcss.com/)
@@ -8,7 +11,14 @@
 [![SQLite](https://img.shields.io/badge/SQLite-3.0-003B57?logo=sqlite)](https://www.sqlite.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-> **FormFlow** is an open-source, full-stack web application replicating Typeform's signature design, drag-and-drop form-building studio, and distraction-free 1-question-at-a-time conversational respondent flow. Built for the SDE Fullstack Assignment.
+> **FormFlow** is a full-stack web application replicating Typeform's signature design, drag-and-drop form-building studio, and distraction-free 1-question-at-a-time conversational respondent flow. Built for the SDE Fullstack Assignment.
+
+---
+
+## 🌐 Live Deliverables
+
+- **Live Deployed Application**: [https://formflow-typeform-clone.vercel.app/](https://formflow-typeform-clone.vercel.app/)
+- **GitHub Repository**: [https://github.com/suryansh79/formflow-typeform-clone](https://github.com/suryansh79/formflow-typeform-clone)
 
 ---
 
@@ -100,7 +110,7 @@ FormFlow delivers a seamless dual-experience platform:
 ┌────────────────────────────────────────────────────────────────────────┐
 │                         SQLite Database                                │
 │          `typeform.db` (Forms, Questions, Responses, Answers)          │
-└────────────────────────────────────────────────────────────────────────┘
+└───────────────────────────────────┬────────────────────────────────────┘
 ```
 
 ---
@@ -184,8 +194,8 @@ FormFlow delivers a seamless dual-experience platform:
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/your-username/formflow.git
-cd formflow
+git clone https://github.com/suryansh79/formflow-typeform-clone.git
+cd formflow-typeform-clone
 ```
 
 ### 2. Backend Setup (FastAPI)
@@ -218,6 +228,8 @@ Open `http://localhost:3000` in your browser.
 
 | Requirement | Implementation Status | Location |
 | :--- | :---: | :--- |
+| **Live Deployed App** | ✅ Complete | [https://formflow-typeform-clone.vercel.app/](https://formflow-typeform-clone.vercel.app/) |
+| **Public GitHub Repo** | ✅ Complete | [https://github.com/suryansh79/formflow-typeform-clone](https://github.com/suryansh79/formflow-typeform-clone) |
 | **8 Question Types** | ✅ Complete | `Short Text`, `Long Text`, `Multiple Choice`, `Dropdown`, `Email`, `Number`, `Yes/No`, `Rating` |
 | **Drag & Drop Builder** | ✅ Complete | `QuestionList.tsx` with `@hello-pangea/dnd` |
 | **Live Device Preview** | ✅ Complete | `LivePreview.tsx` (Desktop / Mobile toggle) |
